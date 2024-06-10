@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Update the system packages
+# Update the system packages 
 sudo yum update -y
 
 # Download and add the Jenkins repository
