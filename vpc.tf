@@ -9,7 +9,7 @@ resource "aws_vpc" "jenkins-vpc" {
     # Enable DNS hostnames for the VPC
     enable_dns_hostnames = true
 
-    # Add tags to the VPC for identification
+    # Add tags to the VPC for identification.
     tags = {
         Name = "jenkins-vpc"
     }
