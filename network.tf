@@ -17,7 +17,7 @@ resource "aws_route_table" "public-jenkins-rt" {
         Name = "public-jenkins-rt"
     }
 }
-# Associate the public subnet with the public route table
+# Associate the public subnet with the public route table.
 resource "aws_route_table_association" "public-subnet-association" {
     subnet_id      = aws_subnet.public-jenkins-subnet.id
     route_table_id = aws_route_table.public-jenkins-rt.id
