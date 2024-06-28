@@ -24,7 +24,7 @@ resource "aws_subnet" "public-jenkins-subnet" {
     cidr_block        = "10.0.1.0/24"
     
     # Specify the availability zone for the public subnet
-    availability_zone = "eu-west-1a"
+    availability_zone = "ap-south-1a"
 
 	  # Ensure that instances launched in this subnet will have public IP addresses
     map_public_ip_on_launch = true
